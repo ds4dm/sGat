@@ -14,8 +14,9 @@ class Affinity(nn.Module):
     the attention keys, the attention queries and some optional query-keys
     specifics (e.g a mask).
     """
-
-    pass
+    def __init__(self):
+        """Upward initialization."""
+        super().__init__()
 
 
 class DotProduct(Affinity):
